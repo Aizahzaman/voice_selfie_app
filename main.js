@@ -13,8 +13,8 @@ new_api.onresult= function (event) {
     console.log(content);
     if(content=="take my selfie"){
         Webcam.attach(camera);
+        speak();
         setTimeout(function(){
-            speak();
             selfie();
         },3000);
     }
